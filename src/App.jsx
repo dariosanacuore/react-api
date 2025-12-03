@@ -14,8 +14,8 @@ function App() {
         "https://lanciweb.github.io/demo/api/actresses/"
       )
       .then((resp) => {
-        setDatiAttori(resp.data.response);
-        console.log(datiAttori);
+        setDatiAttori(resp.data);
+        console.log(resp.data);
       });
   }, []);
   return (
